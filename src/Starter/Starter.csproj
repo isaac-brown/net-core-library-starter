@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <Version>0.0.0</Version>
+    <Authors>{{author_name}}</Authors>
+    <Description>Core package for creating and managing blog posts.</Description>
+    <RepositoryType>github</RepositoryType>
+    <PackageTags>blog</PackageTags>
+    <PackageLicenseUrl>{{git_repo_url}}/blob/master/LICENCE.txt</PackageLicenseUrl>
+    <PackageProjectUrl>{{git_repo_url}}</PackageProjectUrl>
+    <RepositoryUrl>{{git_repo_url}}</RepositoryUrl>
+    <Copyright>2019</Copyright>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Users\Isaac Laptop\Desktop\Github\Starter\src\Starter\Starter.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="stylecop.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="stylecop.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NodaTime" Version="2.4.6" />
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>

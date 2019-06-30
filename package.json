@@ -1,0 +1,36 @@
+{
+  "name": "muster.core",
+  "version": "0.1.0",
+  "description": "Core package for creating and managing blog posts.",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "scripts": {
+    "build": "dotnet build src/Starter",
+    "publish": "echo 'not implemented!'",
+    "release:dry": "standard-version --dry-run",
+    "release:preview": "standard-version --skip.changelog=true --skip.tag=true --prerelease preview --commit-all",
+    "release": "standard-version --commit-all",
+    "test:watch": "dotnet watch --project test/Starter.Test test",
+    "test": "dotnet test",
+    "update:auto": "powershell ./scripts/update-packages.ps1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+{{git_repo_url}}.git"
+  },
+  "author": "{{author_name}}",
+  "license": "ISC",
+  "bugs": {
+    "url": "{{git_repo_url}}/issues"
+  },
+  "homepage": "{{git_repo_url}}#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^8.0.0",
+    "@commitlint/config-conventional": "^8.0.0",
+    "husky": "^2.4.1",
+    "replace-in-file": "^4.1.0",
+    "standard-version": "^6.0.1"
+  }
+}
