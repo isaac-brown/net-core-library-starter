@@ -9,9 +9,12 @@ To make this project your own, run the script `.\rename-project.ps1`:
 ```powershell
 # Make this project your own.
 # - rename files and folders to "Some.Repo"
-# - specify the git repository url as "https://github.com/some-repo"
+# - specify the git repository url as "https://github.com/isaac-brown/some-repo"
 # - with the author set to "Joe Blogs"
-.\rename-project.ps1 "Some.Repo" "https://github.com/some-repo" "Joe Blogs"
+$ .\rename-project.ps1
+project name: Some.Repo
+git repository: https://github.com/isaac-brown/some-repo
+author: Joe Blogs
 ```
 
 ## Getting started
